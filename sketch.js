@@ -21,16 +21,16 @@ function setup() {
   engine = Engine.create();
   world = engine.world;
   frameRate(80);
-
-  ground = new Base(0, height - 10, width * 2, 20, "#795548", true);
-  leftWall = new Base(300, height / 2 + 50, 600, 100, "#8d6e63", true);
-  rightWall = new Base(width - 300, height / 2 + 50, 600, 100, "#8d6e63", true);
+console.log(width/2)
+  ground = new Base(width/2, height - 10, width , 20, "#795548", true);
+  leftWall = new Base(150, height / 2 + 50, 300, 100, "#8d6e63", true);
+  rightWall = new Base(width-150, height / 2 + 50, 300, 100, "#8d6e63", true);
 
   /*bridge = new Base(15, { x: width / 2 - 400, y: height / 2 });
   jointPoint = new Base(width - 600, height / 2 + 10, 40, 20, "#8d6e63", true);*/
 
-  bridge = new Bridge(15, { x: width / 2 - 400, y: height / 2 });
-  jointPoint = new Base(width - 600, height / 2 + 10, 40, 20, "#8d6e63", true);
+  bridge = new Bridge(15, { x: width / 2 -590, y: height / 2 });
+  jointPoint = new Base(width - 300, height / 2 + 10, 40, 20, "#8d6e63", true);
 
   /*bridge = new Base(15, { x: width / 2 - 400, y: height / 2 });
   jointPoint = new Bridge(width - 600, height / 2 + 10, 40, 20, "#8d6e63", true);*/
